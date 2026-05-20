@@ -9,6 +9,20 @@
 #define ADJ 3
 
 / {
+    combos {
+        compatible = "zmk,combos";
+
+        rgui-jkl {
+            bindings = <&kp RIGHT_GUI>;
+            key-positions = <31 32 33>;
+        };
+
+        lalt_sdf {
+            bindings = <&kp LEFT_ALT>;
+            key-positions = <28 27 26>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
